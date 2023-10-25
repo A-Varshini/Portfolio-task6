@@ -1,0 +1,63 @@
+
+.App {
+  text-align: center;
+}
+/* body{
+  background-color: #663dff;
+background-image: linear-gradient(319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%);
+overflow: hidden;
+
+} */
+
+/* .header{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  
+                /* background-color: #000; */
+                /* line-height: 40px;
+} */ */
+
+
+h2{
+  font-size: 50px;
+  text-align: center;
+  padding-top: 90px;
+  margin-left: -9px;
+  
+}
+
+/*Heading Shake Effect*/
+
+h2:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+      transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+      transform: translate3d(4px, 0, 0);
+  }
+}
